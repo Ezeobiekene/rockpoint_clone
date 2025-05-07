@@ -10,31 +10,31 @@ const Connect = () => {
         <label htmlFor="date">Date</label>
         <span>Required</span>
         <br />
-        <input type="datetime-local" id="date" />
+        <input required type="datetime-local" id="date" />
         <br />
         <br />
         <label htmlFor="name">Name</label>
         <span>Required</span>
         <br />
-        <input type="text" id="name" />
+        <input required type="text" id="name" />
         <br />
         <br />
         <label htmlFor="address">Address</label>
         <span>Required</span>
         <br />
-        <input type="text" id="address" />
+        <input required type="text" id="address" />
         <br />
         <br />
         <label htmlFor="email">Email</label>
         <span>Required</span>
         <br />
-        <input type="text" id="email" />
+        <input required type="text" id="email" />
         <br />
         <br />
         <label htmlFor="phone">Phone</label>
         <span>Required</span>
         <br />
-        <input id="phone" />
+        <input required id="phone" />
         <br />
         <br />
         <label htmlFor="call">Can we call you?</label>

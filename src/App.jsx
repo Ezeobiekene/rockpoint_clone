@@ -7,7 +7,15 @@ import Virtual from "./pages/Virtual";
 import Connect from "./pages/Connect";
 import Give from "./pages/Give";
 import Events from "./pages/Events";
-// import reactLogo from './assets/react.svg'
+import Profile from "./pages/Profile";
+import Privatechat from "./pages/Privatechat";
+import Churchnews from "./pages/Churchnews";
+import Ladieslg from "./pages/Ladieslg";
+import Menslg from "./pages/Menslg"
+import Youthlg from "./pages/Youthlg"
+import Worshipteam from "./pages/Worshipteam"
+import Connectioncard from "./pages/Connectioncard"
+import Dashboard from "./pages/Dashboard"
 
 const App = () => {
   return (
@@ -21,6 +29,15 @@ const App = () => {
             <Route path="connect" element={<Connect />} />
             <Route path="give" element={<Give />} />
             <Route path="events" element={<Events />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="privatechat" element={<Privatechat />} />
+            <Route path="news" element={<Churchnews />} />
+            <Route path="ladieslg" element={<Ladieslg />} />
+            <Route path="menslg" element={<Menslg />} />
+            <Route path="youthlg" element={<Youthlg />} />
+            <Route path="worship" element={<Worshipteam />} />
+            <Route path="connectcard" element={<Connectioncard />} />
+            <Route path="dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
       </BrowserRouter>
