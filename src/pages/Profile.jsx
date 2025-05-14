@@ -45,7 +45,13 @@ const Profile = () => {
     setGender(event.target.value);
   };
   const handlePhoto = (event) => {
-    setPhoto(event.target.value);
+    console.log(event)
+    const file = event.target.files[0];
+    if (file) {
+      setPhoto(URL.createObjectURL(file));
+    }
+    // setPhoto(event.target.value);
+    // setPhoto(URL.createObjectURL(file))
   };
 
   return (
@@ -100,7 +106,8 @@ const Profile = () => {
       </form>
       <img src={photo} />
       <p>
-        {title} {role} {name} {age} {address} {gender} {maritalstatus} {phone} {birthday} {email}
+        {title} {role} {name} {age} {address} {gender} {maritalstatus} {phone}{" "}
+        {birthday} {email}
       </p>
     </>
   );
